@@ -11,7 +11,6 @@ const env_path = path.resolve(process_path, '.env');
 require('dotenv').config({path: env_path});
 
 
-// THIS IS WRONG NEVER DO THAT !! Only for the task we put the DB Link here!! NEVER DO THAAAT AGAIN !!
 //Check db connection links in README file
 const MongoURI = process.env.MONGO_URI ;
 const {getUsers, signUp,getUserById}= require('./Controller/userController')
